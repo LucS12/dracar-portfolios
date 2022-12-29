@@ -15,4 +15,4 @@ def index():
         return portfolios_json
 
 if __name__ == "__main__":
-    app.run(port=7776)
+    app.run()
