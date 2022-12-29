@@ -1,5 +1,5 @@
 #Necessary packages:
-from flask import Flask, request, jsonify
+from flask import Flask, request, Response
 import allocation_model
 
 #Run the web app:
@@ -16,4 +16,4 @@ def portfolios():
     if request.method == 'GET':
         portfolios_json = allocation_model.efficient_allocations()
 
-        return portfolios_json
+        return Response(portfolios_json, mimetype='application/json')
