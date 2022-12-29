@@ -13,6 +13,3 @@ def index():
         portfolios_json = allocation_model.efficient_allocations()
 
         return portfolios_json
-
-if __name__ == "__main__":
-    app.run()
