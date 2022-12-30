@@ -17,5 +17,3 @@ def portfolios():
         portfolios_json = allocation_model.efficient_allocations()
 
         return Response(portfolios_json, mimetype='application/json')
-
-app.run(host='0.0.0.0:$PORT')    
