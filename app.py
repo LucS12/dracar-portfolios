@@ -18,4 +18,4 @@ def portfolios():
 
         return Response(portfolios_json, mimetype='application/json')
 
-app.run()    
+app.run(host='0.0.0.0:$PORT')    
